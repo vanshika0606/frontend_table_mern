@@ -27,7 +27,7 @@ let value , name;
 
           const {name,email,phoneNumber, hobbies} = table;
 
-          const res = await fetch("http://localhost:3000/",{
+          const res = await fetch("https://mern-table.herokuapp.com/",{
             method:"POST",
             headers:{
                 "Content-Type": "application/json"

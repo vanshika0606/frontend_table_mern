@@ -13,7 +13,7 @@ const Table = (props) => {
     const [del, setDel] = useState(0);
 
     const fetchData = async()=>{
-          fetch("http://localhost:3000/allrows").then((res)=>{
+          fetch("https://mern-table.herokuapp.com/allrows").then((res)=>{
                 return res.json();
           }).then(async(data)=>{
             setRows(data.table)
@@ -110,7 +110,7 @@ const Table = (props) => {
        <i className="fa fa-trash" aria-hidden="true"
        onClick={()=>{
         
-        fetch('http://localhost:3000/deleterow/' +r._id, {
+        fetch('https://mern-table.herokuapp.com/deleterow/' +r._id, {
       method: 'DELETE',
     })
 

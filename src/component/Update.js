@@ -22,7 +22,7 @@ const Update = (props) => {
 
         e.preventDefault();
 
-        const res = await fetch("/updaterow/" + props.id, {
+        const res = await fetch("https://mern-table.herokuapp.com/updaterow/" + props.id, {
             method:"PUT",
             headers:{
               "Content-Type": "application/json"
